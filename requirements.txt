@@ -1,0 +1,4 @@
+wikiextractor
+gensim
+mecab-python3
+tqdm

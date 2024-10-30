@@ -1,0 +1,6 @@
+Wikipediaのページをダウンロード
+curl https://dumps.wikimedia.org/jawiki/latest/jawiki-latest-pages-articles.xml.bz2 -o jawiki-latest-pages-articles.xml.bz2
+本文抽出
+python -m wikiextractor.WikiExtractor jawiki-latest-pages-articles.xml.bz2
+ファイル整形
+for /r text %f in (*wiki*) do type "%f" >> wiki.txt
